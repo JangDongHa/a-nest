@@ -14,10 +14,15 @@ import { ChannelChats } from './ChannelChats';
 import { ChannelMembers } from './ChannelMembers';
 import { Users } from './Users';
 import { Workspaces } from './Workspaces';
+import {ApiProperty} from "@nestjs/swagger";
 
 @Index('WorkspaceId', ['WorkspaceId'], {})
 @Entity({ schema: 'sleact' })
 export class Channels {
+  @ApiProperty({
+    example: 1,
+    description: 'PK'
+  })
   @PrimaryGeneratedColumn({ type: 'int', name: 'id' })
   id: number;
 
