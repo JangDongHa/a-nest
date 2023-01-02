@@ -10,10 +10,10 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { ChannelChats } from './ChannelChats';
-import { ChannelMembers } from './ChannelMembers';
-import { Users } from './Users';
-import { Workspaces } from './Workspaces';
+import { ChannelChats } from './channelChats';
+import { ChannelMembers } from './channelMembers';
+import { Users } from './users';
+import { Workspaces } from './workspaces';
 import {ApiProperty} from "@nestjs/swagger";
 
 @Index('WorkspaceId', ['WorkspaceId'], {})

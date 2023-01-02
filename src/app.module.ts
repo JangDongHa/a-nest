@@ -7,6 +7,7 @@ import { UsersModule } from './users/users.module';
 import { ChannelsModule } from './channels/channels.module';
 import { WorkspacesModule } from './workspaces/workspaces.module';
 import { DmsModule } from './dms/dms.module';
+import {DatabaseModule} from "./database/database.module";
 
 const getENV = async () => {
   return {
@@ -15,7 +16,7 @@ const getENV = async () => {
   }
 }
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true, load: [getENV]}), UsersModule, ChannelsModule, WorkspacesModule, DmsModule],
+  imports: [ConfigModule.forRoot({ isGlobal: true, load: [getENV]}), UsersModule, ChannelsModule, WorkspacesModule, DmsModule, DatabaseModule],
   controllers: [AppController],
   providers: [AppService, ConfigService, {
     provide: 'testValue',

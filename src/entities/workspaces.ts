@@ -11,11 +11,11 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { Channels } from './Channels';
-import { DMs } from './DMs';
-import { Mentions } from './Mentions';
-import { WorkspaceMembers } from './WorkspaceMembers';
-import { Users } from './Users';
+import { Channels } from './channels';
+import { DMs } from './dMs';
+import { Mentions } from './mentions';
+import { WorkspaceMembers } from './workspaceMembers';
+import { Users } from './users';
 
 @Index('name', ['name'], { unique: true })
 @Index('url', ['url'], { unique: true })

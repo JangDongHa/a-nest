@@ -7,8 +7,8 @@ import {
   ManyToOne,
   UpdateDateColumn,
 } from 'typeorm';
-import { Workspaces } from './Workspaces';
-import { Users } from './Users';
+import { Workspaces } from './workspaces';
+import { Users } from './users';
 
 @Index('UserId', ['UserId'], {})
 @Entity('workspacemembers', { schema: 'sleact' })

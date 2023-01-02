@@ -1,4 +1,4 @@
-import {
+import{
   Column,
   CreateDateColumn,
   Entity,
@@ -8,8 +8,8 @@ import {
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm';
-import { Users } from './Users';
-import { Channels } from './Channels';
+import { Users } from './users';
+import { Channels } from './channels';
 
 @Index('UserId', ['UserId'], {})
 @Index('ChannelId', ['ChannelId'], {})
